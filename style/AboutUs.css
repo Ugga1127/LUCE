@@ -1,0 +1,74 @@
+/* OUR STORY */
+.our-story {
+  display: flex;
+  min-height: 300px;
+}
+
+/* LEFT SIDE */
+.our-story-left {
+  flex: 1;
+  background: #FFF0DF;
+  padding: 75px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.our-story-up {
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: #C08552;
+  /* margin-bottom: 20px; */
+}
+
+.our-story-title {
+  font-size: 52px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #4B2E2B;
+  font-family: 'Serif', 'Georgia', serif;
+}
+
+.our-story-body {
+  font-size: 16px;
+  color: #9a7c68;
+  max-width: 300px;
+}
+
+/* RIGHT SIDE */
+.our-story-right {
+  flex: 1;
+  background: #FFE9D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-story-pic img {
+  width: 420px;
+  max-width: 100%;
+}
+
+/* WHO WE ARE */
+.who-we-are {
+  background: #f6eee6;
+  padding: 100px 80px;
+  text-align: center;
+}
+
+.who-we-are-label{
+    color: #4B2E2B;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+/* underline */
+.who-we-are-label::after{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: #C08552;
+    margin: 10px auto 40px;
+}

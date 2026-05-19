@@ -1,0 +1,140 @@
+/* Content */
+.content-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFF0DF;
+    padding: 40px 0;
+    font-family: 'Serif', 'Georgia', serif;
+    width: 100%;
+}
+
+.content{
+    padding-left: 10%;
+}
+
+.content h1{
+    color: #8C5A3C;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.content p{
+    color: #C08552;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.shop-button{
+    background-color: #8C5A3C;
+    color: #FFF8F0;
+    padding: 12px 30px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    display: inline-block;
+}
+
+.shop-button:hover{
+    background-color: #FFF8F0;
+    color: #8C5A3C;
+    border: 1px solid #8C5A3C;
+}
+
+.content-image{
+    text-align: right;
+    padding: 0 10%;
+}
+
+.content-image img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Our Product & Services */
+.product-service{
+    background-color: #FFF8F0;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Serif', 'Georgia', serif;
+}
+
+.section-title{
+    color: #8C5A3C;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product{
+    flex: 1;
+    background-color: #FFF8F0;
+    border: 1px solid #8C5A3C;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.image-box{
+    padding: 20px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #8C5A3C;
+    background-color: #FFF0DF;
+}
+
+.image-box img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.product-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.product-info h3{
+    color: #8C5A3C;
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 10px 0;
+    letter-spacing: 0.5px;
+    font-family: 'Serif', 'Georgia', serif;
+}
+
+.product-info p{
+    color: #C08552;
+    line-height: 1.6rem;
+}
+
+.view-button{
+    display: inline-block;
+    background-color: #8C5A3C;
+    color: #FFF0DF;
+    padding: 10px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: 'Serif', 'Georgia', serif;
+    align-self: center;
+    margin-bottom: 25px;
+}
+
+.view-button:hover{
+    background-color: #FFF0DF;
+    color: #8C5A3C;
+    border: 1px solid #8C5A3C;
+}
