@@ -2,6 +2,7 @@
 .our-story {
   display: flex;
   min-height: 300px;
+  width: 100%;
 }
 
 /* LEFT SIDE */
@@ -18,7 +19,6 @@
   font-size: 14px;
   letter-spacing: 3px;
   color: #C08552;
-  /* margin-bottom: 20px; */
 }
 
 .our-story-title {
@@ -49,26 +49,109 @@
   max-width: 100%;
 }
 
+
 /* WHO WE ARE */
 .who-we-are {
-  background: #f6eee6;
-  padding: 100px 80px;
+  background: #FFF8F0;
+  padding: 60px 80px;
   text-align: center;
 }
 
-.who-we-are-label{
-    color: #4B2E2B;
-    font-size: 1.5rem;
-    letter-spacing: 3px;
-    margin-bottom: 20px;
+.who-grid{
+  width: 1200px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 30px;
+  padding: 0;
 }
 
-/* underline */
-.who-we-are-label::after{
-    content: "";
-    display: block;
-    width: 40px;
-    height: 2px;
-    background: #C08552;
-    margin: 10px auto 40px;
+.who-img-frame{
+  margin-top: 8px;
+}
+
+.who-img-frame img{
+  border: 10px solid #C08552;
+  width: 400px;
+  display: block;
+}
+
+.who-content{
+  width: 600px;
+  text-align: left;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.who-title{
+  font-size: 2.8rem;
+  margin-top: 0;
+  color: #4B2E2B;
+  line-height: 1.5;
+}
+
+.who-paragraph{
+  line-height: 1.3;
+  color: #C08552;
+  font-size: 16px;
+}
+
+
+/* WHAT WE STAND FOR */
+.what-we-stand-for {
+  background-color: #FFF0DF;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* For Title */
+.section-title {
+  color: #4B2E2B;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #C08552;
+  margin: 10px auto 40px;
+}
+
+.values-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.w-card {
+  background-color: #FFF8F0;
+  padding: 30px 20px;
+  width: 280px;
+  border-radius: 4px;
+}
+
+.w-icon {
+  font-size: 24px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.w-title {
+  color: #4B2E2B;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.w-text {
+  color: #C08552;
+  font-size: 0.85rem;
+  line-height: 1.5;
 }
