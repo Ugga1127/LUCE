@@ -39,9 +39,10 @@
 }
 
 .shop-button:hover{
-    background-color: #FFF8F0;
+    /* background-color: #FFF8F0;
     color: #8C5A3C;
-    border: 1px solid #8C5A3C;
+    border: 1px solid #8C5A3C; */
+    background-color: #6b2b04;
 }
 
 .content-image{
@@ -85,6 +86,7 @@
     flex-direction: column;
     overflow: hidden;
     border-radius: 4px;
+    height: 550px;
 }
 
 .image-box{
@@ -131,6 +133,7 @@
     font-family: 'Serif', 'Georgia', serif;
     align-self: center;
     margin-bottom: 25px;
+    margin-top: 10px;
 }
 
 .view-button:hover{
