@@ -171,3 +171,88 @@ body{
   text-decoration: none;
   color: #FFF8F0;
 }
+
+/* service */
+.service{
+    background-color: #FFE9D0;
+    padding: 60px 5%;
+}
+
+/* Card */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 40px;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Single Card */
+.service-card {
+    width: 100%;
+    background: #FFF8F0; /* 还原图片内卡片的优雅浅乳白色背景 */
+    border: 1px solid #8C5A3C; /* 图片内卡片的边框颜色 */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 内容全部靠左对齐 */
+    text-align: left;
+}
+
+/* Icon */
+.card-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+/* Text Area */
+.card-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-text h3 {
+    color: #4B2E2B;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.card-text p {
+    color: #8C5A3C;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Price */
+.card-text .price {
+    color: #4B2E2B !important;
+    font-size: 16px !important;
+    font-weight: bold;
+    text-transform: none;
+    margin-top: auto;
+    margin-bottom: 20px !important;
+}
+
+/* Enquiry Now */
+.enquire-btn {
+    align-self: flex-start;
+    border: 1px solid #4B2E2B;
+    background: transparent;
+    color: #4B2E2B;
+    padding: 12px 35px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.enquire-btn:hover {
+    background-color: #4B2E2B;
+    color: #FFF8F0;
+}

@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Serif', 'Georgia', serif;
+    background-color: #FFF8F0;
+}
+
+/* Get in Touch With Us */
+.contact-hero {
+    width: 100%;
+    height: 460px;
+    display: flex;
+}
+
+.hero-left {
+    width: 45%;
+    background: #FFF0DF;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-left h1 {
+    font-size: 52px;
+    color: #4B2E2B;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+
+.hero-left p {
+    font-size: 16px;
+    color: #C08552;
+    line-height: 1.7;
+}
+
+.hero-right {
+    width: 55%;
+    display: flex;
+    overflow: hidden;
+}
+
+.hero-right img {
+    height: 460px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Contact Us & Form */
+.contact-main {
+    background-color: #FFF8F0;
+    padding: 80px 8%;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 80px;
+}
+
+/* Left Column: Info */
+.info-column {
+    flex: 1;
+}
+
+.info-column h2 {
+    font-size: 38px;
+    color: #4B2E2B;
+    margin-bottom: 20px;
+    font-weight: normal;
+    position: relative;
+}
+
+.info-column h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #C08552;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.info-intro {
+    color: #C08552;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.detail-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.detail-icon {
+    width: 45px;
+    height: 45px;
+    background-color: #F5E3D0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.detail-icon img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    color: #4B2E2B;
+}
+
+.detail-text h4 {
+    color: #8C5A3C;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.detail-text p {
+    color: #4B2E2B;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Opening Hours Card */
+.opening-hours-box {
+    background-color: #F5E3D0;
+    padding: 25px 30px;
+    border-radius: 2px;
+    max-width: 380px;
+}
+
+.opening-hours-box h4 {
+    color: #8C5A3C;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.hours-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.hours-row:last-child {
+    margin-bottom: 0;
+}
+
+.hours-row .day {
+    color: #8C5A3C;
+}
+
+.hours-row .time {
+    color: #4B2E2B;
+    font-weight: bold;
+}
+
+/* Right Column: Form */
+.form-column {
+    flex: 1.2;
+    background: #FFFBF7;
+    border: 1px solid #DDB392;
+    padding: 45px;
+}
+
+.form-column h3 {
+    color: #4B2E2B;
+    font-size: 32px;
+    margin-bottom: 35px;
+    font-weight: normal;
+}
+
+.message-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-row-double {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row-double .form-group {
+    flex: 1;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group label {
+    color: #4B2E2B;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.form-group input, .form-group textarea, .form-group select {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    background-color: #EFE3D6;
+    color: #4B2E2B;
+    font-family: 'Serif', 'Georgia', serif;
+    font-size: 15px;
+    outline: none;
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+.form-group select {
+    cursor: pointer;
+}
+
+.form-group select option {
+    background-color: #FFFBF7;
+    color: #4B2E2B;
+}
+
+.placeholder-text {
+    color: #A08070;
+}
+
+/* Send Message Button */
+.send-btn {
+    align-self: flex-start;
+    border: 1px solid #4B2E2B;
+    background: transparent;
+    color: #4B2E2B;
+    padding: 14px 45px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Serif', 'Georgia', serif;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.send-btn:hover {
+    background-color: #4B2E2B;
+    color: #FFF8F0;
+}
+
+/* Google Map */
+.maps-bar-section {
+    padding: 0 8% 60px 8%;
+    background-color: #FFF8F0;
+}
+
+.maps-bar-section a{
+    text-decoration: none;
+}
+
+.maps-bar {
+    max-width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: #EFE3D6;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.map-icon {
+    font-size: 20px;
+}
+
+.maps-bar p {
+    color: #4B2E2B;
+    font-size: 16px;
+}

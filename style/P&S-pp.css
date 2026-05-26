@@ -172,7 +172,7 @@ body{
   color: #FFF8F0;
 }
 
-/* Bouquet */
+/* potted plant */
 .pottedplant{
     background-color: #FFE9D0;
     padding: 60px 5%;
@@ -228,10 +228,13 @@ body{
     line-height: 1.5;
     margin-bottom: 15px;
 }
+
+/* Price */
 .price {
     color: #4B2E2B !important;
     font-size: 20px !important;
     margin: 8px 0 22px !important;
+    font-weight: bold;
 }
 
 /* Add to Order */
@@ -245,6 +248,7 @@ body{
     font-size: 15px;
     cursor: pointer;
     transition: 0.25 ease;
+    letter-spacing: 1px;
 }
 .add-btn:hover {
     background-color: #4B2E2B;
