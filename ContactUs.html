@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LUCE</title>
-    <link rel="Icon" href="image/Luce.png">
+    <link rel="Icon" href="/IA/image-header/Luce.png">
     <link rel="stylesheet" href="style/header&footer.css">
     <link rel="stylesheet" href="style/ContactUs.css">
 </head>
@@ -186,26 +186,26 @@
             <div class="form-column">
                 <h3>Send Us a Message</h3>
                 
-                <form action="#" class="message-form">
+                <form action="PHP/handle-message.php" method="post" class="message-form">
                     <div class="form-row-double">
                         <div class="form-group">
                             <label>FIRST NAME</label>
-                            <input type="text" name="firstname" required>
+                            <input type="text" name="firstname" placeholder="Zhong Han" required>
                         </div>
                         <div class="form-group">
                             <label>LAST NAME</label>
-                            <input type="text" name="lastname" required>
+                            <input type="text" name="lastname" placeholder="Lim" required>
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label>EMAIL ADDRESS</label>
-                        <input type="email" name="email" required>
+                        <input type="email" name="email" placeholder="example@gmail.com" required>
                     </div>
 
                     <div class="form-group">
                         <label>PHONE NUMBER (OPTIONAL)</label>
-                        <input type="text" name="phone">
+                        <input type="text" name="phone" placeholder="+60">
                     </div>
 
                     <div class="form-group">
