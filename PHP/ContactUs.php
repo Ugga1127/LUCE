@@ -1,15 +1,18 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
-    // 2. 接收表单里的所有输入数据 (安全过滤)
-    $firstName = htmlspecialchars($_POST['firstname']);
-    $lastName  = htmlspecialchars($_POST['lastname']);
-    $email     = htmlspecialchars($_POST['email']);
-    $phone     = htmlspecialchars($_POST['phone']); // 选填项
-    $type      = htmlspecialchars($_POST['enquiry_type']);
-    $message   = htmlspecialchars($_POST['message']);
-
+    // Collect Data
+    $firstName = htmlspecialchars($_POST['firstname'] ?? '');
+    $lastName  = htmlspecialchars($_POST['lastname'] ?? '');
+    $email     = htmlspecialchars($_POST['email'] ?? '');
+    $phone     = htmlspecialchars($_POST['phone'] ?? '');
+    $type      = htmlspecialchars($_POST['enquiry_type'] ?? '');
+    $message   = htmlspecialchars($_POST['message'] ?? '');
+    
+    date_default_timezone_set('Asia/Kuala_Lumpur');
     $timestamp = date("Y-m-d H:i:s");
+
+    // Output
     $logData = "===================================\n";
     $logData .= "Time: $timestamp\n";
     $logData .= "Name: $firstName $lastName\n";
@@ -19,14 +22,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $logData .= "Message:\n$message\n";
     $logData .= "===================================\n\n";
 
-    file_put_contents("messages.txt", $logData, FILE_APPEND);
+    file_put_contents("ContactUsMessages.txt", $logData, FILE_APPEND);
 
     echo "<script>
             alert('Message sent successfully! We will contact you soon.');
             window.location.href = '../ContactUs.html';
-          </script>";
+        </script>";
     exit();
-} else {
+} 
+else {
     echo "<script>window.location.href = '../ContactUs.html';</script>";
     exit();
 }

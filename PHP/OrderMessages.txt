@@ -1,0 +1,24 @@
+===================================
+Order Time: 2026-05-27 21:25:10
+Name: Zhong Han Lim
+Phone: +60146990920
+Email: uggajiva.lim@gmail.com
+Delivery Method: standard
+Delivery Address: 999, Lorong Wow,93250, Kuching, Sarawak.
+Preferred Date: 2026-06-02
+Time Slot: afternoon
+Notes: ghjkl
+===================================
+
+===================================
+Order Time: 2026-05-27 21:25:51
+Name: wuwuwuwu Lim
+Phone: +60146990920
+Email: uggajiva.lim@gmail.com
+Delivery Method: standard
+Delivery Address: 999, Lorong Wow,93250, Kuching, Sarawak.
+Preferred Date: 2026-06-02
+Time Slot: evening
+Notes: 我操了
+===================================
+

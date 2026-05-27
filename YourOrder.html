@@ -110,42 +110,49 @@
                     <h2 class="box-title">Delivery Address</h2>
                     <p class="box-subtitle">Please enter your details and preference below.</p>
                     
-                    <form class="address-form" onsubmit="return false;">
+                    <form action="PHP/YourOrder.php" method="post" id="addressform" class="address-form";>
                         <div class="form-row">
                             <div class="form-group">
                                 <label>FIRST NAME</label>
-                                <input type="text" placeholder="Zhong Han" required>
+                                <!-- name for php -->
+                                <input type="text" name="firstname" placeholder="Zhong Han" required>
                             </div>
                             <div class="form-group">
                                 <label>LAST NAME</label>
-                                <input type="text" placeholder="Lim" required>
+                                <!-- name for php -->
+                                <input type="text" name="lastname" placeholder="Lim" required>
                             </div>
                         </div>
 
                         <div class="form-row">
                             <div class="form-group">
                                 <label>PHONE / WHATSAPP</label>
-                                <input type="tel" placeholder="+60" required>
+                                <!-- name for php -->
+                                <input type="tel" name="phone" placeholder="+60" required>
                             </div>
                             <div class="form-group">
                                 <label>EMAIL</label>
-                                <input type="email" placeholder="example@gmail.com" required>
+                                <!-- name for php -->
+                                <input type="email" name="email" placeholder="example@gmail.com" required>
                             </div>
                         </div>
 
                         <div class="form-group full-width">
                             <label>DELIVERY ADDRESS</label>
-                            <input type="text" placeholder="Enter your full street address, building or suite number" required>
+                            <!-- name for php -->
+                            <input type="text" name="deliveryaddress" placeholder="Enter your full street address, building or suite number" required>
                         </div>
 
                         <div class="form-row">
                             <div class="form-group">
                                 <label>PREFERRED DATE</label>
-                                <input type="date" required>
+                                <!-- name for php -->
+                                <input type="date" name="prefereddate" required>
                             </div>
+
                             <div class="form-group">
                                 <label>TIME SLOT</label>
-                                <select required>
+                                <select name="timeslot" required>
                                     <option value="" disabled selected hidden>---------- SELECT ----------</option>
                                     <option value="morning">Morning (9:00 AM - 12:00 PM)</option>
                                     <option value="afternoon">Afternoon (12:00 PM - 3:00 PM)</option>
@@ -156,8 +163,9 @@
 
                         <div class="form-group full-width">
                             <label>SPECIAL REQUESTS / NOTES</label>
-                            <textarea rows="4" placeholder="Add any special instructions (e.g., card messages, gate codes)..."></textarea>
+                            <textarea rows="4" name="notes" placeholder="Add any special instructions (e.g., card messages, gate codes)..."></textarea>
                         </div>
+
                     </form>
                 </div>
 
@@ -190,7 +198,8 @@
                         <span id="summary-total" class="grand-price">RM0.00</span>
                     </div>
 
-                    <button type="submit" class="place-order-btn">PLACED ORDER</button>
+                    <!-- form link to the form -->
+                    <button type="submit" form="addressform" class="place-order-btn">PLACED ORDER</button>
                 </div>
             </div>
 
