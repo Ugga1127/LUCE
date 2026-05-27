@@ -140,6 +140,10 @@ body {
     background-color: #FFF0DF;
 }
 
+.delivery-option.active{
+    background-color: #FFF0DF;
+}
+
 .delivery-info {
     display: flex;
     align-items: center;

@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="style/YourOrder.css">
 </head>
 <body>
-    
     <header class="main-header">
         <div class="header-container">
 
@@ -65,7 +64,8 @@
                     <div class="delivery-methods-list">
                         
                         <label class="delivery-option">
-                            <input type="radio" name="delivery_method" value="standard" checked hidden>
+                            <!-- data-fee for JS -->
+                            <input type="radio" name="delivery_method" value="standard" data-fee="15" checked hidden>
                             <div class="delivery-info">
                                 <span class="delivery-icon">🚚</span>
                                 <div class="delivery-text">
@@ -77,7 +77,8 @@
                         </label>
 
                         <label class="delivery-option">
-                            <input type="radio" name="delivery_method" value="sameday" hidden>
+                            <!-- data-fee for JS -->
+                            <input type="radio" name="delivery_method" value="sameday" data-fee="25" hidden>
                             <div class="delivery-info">
                                 <span class="delivery-icon">⚡</span>
                                 <div class="delivery-text">
@@ -89,7 +90,8 @@
                         </label>
 
                         <label class="delivery-option">
-                            <input type="radio" name="delivery_method" value="pickup" hidden>
+                            <!-- data-fee for JS -->
+                            <input type="radio" name="delivery_method" value="pickup" data-fee="0" hidden>
                             <div class="delivery-info">
                                 <span class="delivery-icon">🏢</span>
                                 <div class="delivery-text">
@@ -103,8 +105,10 @@
                     </div>
                 </div>
 
-                <div class="order-card-box">
+                <!-- address-card-box for JS -->
+                <div class="order-card-box" id="address-card-box">
                     <h2 class="box-title">Delivery Address</h2>
+                    <p class="box-subtitle">Please enter your details and preference below.</p>
                     
                     <form class="address-form" onsubmit="return false;">
                         <div class="form-row">
@@ -121,17 +125,17 @@
                         <div class="form-row">
                             <div class="form-group">
                                 <label>PHONE / WHATSAPP</label>
-                                <input type="tel" required>
+                                <input type="tel" placeholder="+60" required>
                             </div>
                             <div class="form-group">
                                 <label>EMAIL</label>
-                                <input type="email" required>
+                                <input type="email" placeholder="example@gmail.com" required>
                             </div>
                         </div>
 
                         <div class="form-group full-width">
                             <label>DELIVERY ADDRESS</label>
-                            <input type="text" required>
+                            <input type="text" placeholder="Enter your full street address, building or suite number" required>
                         </div>
 
                         <div class="form-row">
@@ -152,7 +156,7 @@
 
                         <div class="form-group full-width">
                             <label>SPECIAL REQUESTS / NOTES</label>
-                            <textarea rows="4"></textarea>
+                            <textarea rows="4" placeholder="Add any special instructions (e.g., card messages, gate codes)..."></textarea>
                         </div>
                     </form>
                 </div>
@@ -170,17 +174,20 @@
                     <div class="summary-totals-block">
                         <div class="total-row">
                             <span>Subtotal</span>
-                            <span>RM0.00</span>
+                            <!-- id for JS -->
+                            <span id="summary-subtotal">RM0.00</span>
                         </div>
                         <div class="total-row">
                             <span>Delivery Fee</span>
-                            <span>RM0.00</span>
+                            <!-- id for JS -->
+                            <span id="summary-delivery">RM0.00</span>
                         </div>
                     </div>
 
                     <div class="grand-total-row">
                         <span>Total</span>
-                        <span class="grand-price">RM0.00</span>
+                        <!-- id for JS -->
+                        <span id="summary-total" class="grand-price">RM0.00</span>
                     </div>
 
                     <button type="submit" class="place-order-btn">PLACED ORDER</button>
@@ -273,5 +280,7 @@
         </div>
 
     </footer>
+
+    <script src="JS/YourOrder.js"></script>
 </body>
 </html>
