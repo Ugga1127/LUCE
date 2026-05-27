@@ -58,3 +58,13 @@ Message:
 Maybe the last testing...
 ===================================
 
+===================================
+Time: 2026-05-27 11:10:30
+Name: Zhong Han Lim
+Email: aaa@gmail.com
+Phone: +60146990920
+Enquiry Type: same-day-delivery
+Message:
+testing........
+===================================
+
