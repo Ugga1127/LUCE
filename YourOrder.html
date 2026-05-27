@@ -6,6 +6,7 @@
     <title>LUCE</title>
     <link rel="Icon" href="image/Luce.png">
     <link rel="stylesheet" href="style/header&footer.css">
+    <link rel="stylesheet" href="style/YourOrder.css">
 </head>
 <body>
     
@@ -32,7 +33,162 @@
         </div>
     </header>
 
-    
+    <!-- Order -->
+    <div class="order-title-section">
+        <p class="subtitle">LUCE FLOWER</p>
+        <h1>Your Order</h1>
+    </div>
+
+    <main class="order-main-content">
+        <div class="order-container">
+            
+            <div class="order-left-col">
+                
+                <div class="order-card-box">
+                    <h2 class="box-title">Cart Items</h2>
+                    <p class="box-subtitle">Review your selected products before placing your order.</p>
+                    
+                    <div class="cart-items-list">
+                        
+                        <div class="cart-empty-state">
+                            <div class="empty-icon">🛒</div>
+                            <p class="empty-text">Your cart is currently empty.</p>
+                            <a href="P&S.html" class="shop-now-link">Go to Shop</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="order-card-box">
+                    <h2 class="box-title">Delivery Method</h2>
+                    
+                    <div class="delivery-methods-list">
+                        
+                        <label class="delivery-option">
+                            <input type="radio" name="delivery_method" value="standard" checked hidden>
+                            <div class="delivery-info">
+                                <span class="delivery-icon">🚚</span>
+                                <div class="delivery-text">
+                                    <span class="method-name">Standard</span>
+                                    <span class="method-desc">Delivered to your door</span>
+                                </div>
+                            </div>
+                            <span class="method-price">RM15</span>
+                        </label>
+
+                        <label class="delivery-option">
+                            <input type="radio" name="delivery_method" value="sameday" hidden>
+                            <div class="delivery-info">
+                                <span class="delivery-icon">⚡</span>
+                                <div class="delivery-text">
+                                    <span class="method-name">Same-Day</span>
+                                    <span class="method-desc">Order before 12pm</span>
+                                </div>
+                            </div>
+                            <span class="method-price">RM25</span>
+                        </label>
+
+                        <label class="delivery-option">
+                            <input type="radio" name="delivery_method" value="pickup" hidden>
+                            <div class="delivery-info">
+                                <span class="delivery-icon">🏢</span>
+                                <div class="delivery-text">
+                                    <span class="method-name">Pick-Up</span>
+                                    <span class="method-desc">Collect at our store</span>
+                                </div>
+                            </div>
+                            <span class="method-price">FREE</span>
+                        </label>
+
+                    </div>
+                </div>
+
+                <div class="order-card-box">
+                    <h2 class="box-title">Delivery Address</h2>
+                    
+                    <form class="address-form" onsubmit="return false;">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>FIRST NAME</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="form-group">
+                                <label>LAST NAME</label>
+                                <input type="text" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>PHONE / WHATSAPP</label>
+                                <input type="tel" required>
+                            </div>
+                            <div class="form-group">
+                                <label>EMAIL</label>
+                                <input type="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label>DELIVERY ADDRESS</label>
+                            <input type="text" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>PREFERRED DATE</label>
+                                <input type="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label>TIME SLOT</label>
+                                <select required>
+                                    <option value="" disabled selected hidden>---------- SELECT ----------</option>
+                                    <option value="morning">Morning (9:00 AM - 12:00 PM)</option>
+                                    <option value="afternoon">Afternoon (12:00 PM - 3:00 PM)</option>
+                                    <option value="evening">Evening (3:00 PM - 6:00 PM)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label>SPECIAL REQUESTS / NOTES</label>
+                            <textarea rows="4"></textarea>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="order-right-col">
+                <div class="summary-sticky-box">
+                    <h2 class="summary-title">Order Summary</h2>
+                    
+                    <div class="summary-items-list">
+                        <p style="color: #C08552; font-size: 14px; text-align: center; padding: 10px 0;">No items selected</p>
+                    </div>
+
+                    <div class="summary-totals-block">
+                        <div class="total-row">
+                            <span>Subtotal</span>
+                            <span>RM0.00</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Delivery Fee</span>
+                            <span>RM0.00</span>
+                        </div>
+                    </div>
+
+                    <div class="grand-total-row">
+                        <span>Total</span>
+                        <span class="grand-price">RM0.00</span>
+                    </div>
+
+                    <button type="submit" class="place-order-btn">PLACED ORDER</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
 
     <footer class="main-footer">
         <div class="footer-container">
