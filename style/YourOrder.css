@@ -298,3 +298,122 @@ body {
 .place-order-btn:hover {
     background-color: #35201E;
 }
+
+/* -------------------------------------------------------------------------------------------- */
+/* ── Cart item rows ───────────────────────────────────────────── */
+.cart-item-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0e6d8;
+    position: relative;
+}
+
+.cart-item-row:last-child {
+    border-bottom: none;
+}
+
+.cart-item-img img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #f0e6d8;
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.cart-item-name {
+    font-weight: 600;
+    font-size: 14px;
+    color: #3a2e27;
+    margin-bottom: 4px;
+}
+
+.cart-item-price {
+    font-size: 13px;
+    color: #C08552;
+    margin-bottom: 8px;
+}
+
+/* Qty controls */
+.cart-item-qty {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.qty-btn {
+    width: 26px;
+    height: 26px;
+    border: 1px solid #C08552;
+    background: #fff;
+    color: #C08552;
+    border-radius: 50%;
+    font-size: 16px;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, color 0.2s;
+}
+
+.qty-btn:hover {
+    background: #C08552;
+    color: #fff;
+}
+
+.qty-value {
+    font-size: 14px;
+    font-weight: 600;
+    min-width: 20px;
+    text-align: center;
+    color: #3a2e27;
+}
+
+/* Remove button */
+.remove-btn {
+    background: none;
+    border: none;
+    color: #bbb;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 4px;
+    transition: color 0.2s;
+    align-self: flex-start;
+}
+
+.remove-btn:hover {
+    color: #e05c5c;
+}
+
+/* ── Summary item rows ────────────────────────────────────────── */
+.summary-item-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #3a2e27;
+    padding: 5px 0;
+    border-bottom: 1px dashed #f0e6d8;
+}
+
+.summary-item-row:last-child {
+    border-bottom: none;
+    margin-bottom: 6px;
+}
+
+.summary-item-name {
+    flex: 1;
+    padding-right: 10px;
+}
+
+.summary-item-subtotal {
+    font-weight: 600;
+    color: #C08552;
+    white-space: nowrap;
+}

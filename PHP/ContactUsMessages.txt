@@ -48,3 +48,13 @@ Message:
 fghjkl
 ===================================
 
+===================================
+Time: 2026-05-29 16:05:33
+Name: hui joo bong
+Email: uggajiva.lim@gmail.com
+Phone: +60123456789
+Enquiry Type: event-styling
+Message:
+asdfghjkl;
+===================================
+
